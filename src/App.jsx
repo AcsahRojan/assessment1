@@ -1,7 +1,6 @@
 import React from 'react'
 import { BrowserRouter as Router, Routes,Route } from 'react-router-dom'
 import Header from './components/Header'
-import Home from './components/Home'
 import Dashboard from './components/Dashboard'
 import BlogForm from './components/BlogForm'
 
@@ -13,7 +12,7 @@ const App = () => {
         <div className='App'>
           <Header/>
           <Routes>
-            <Route path='/' element={<Home />} />
+            
             <Route path='/dashboard' element={<Dashboard />} />
             <Route path='/blogform' element={<BlogForm />} />      
           </Routes>
